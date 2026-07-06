@@ -8,11 +8,9 @@ class Solution {
             b = b / 10;
         }
         if(x < 0){
-            a = false;
+            return false;
         }
-        else if(rev == x){
-            a = true;
-        }
-        return a;
+        
+        return x == rev;
     }
 }
